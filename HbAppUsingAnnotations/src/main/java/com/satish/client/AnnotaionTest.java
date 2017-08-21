@@ -9,6 +9,7 @@ public class AnnotaionTest {
 		EmployeeDAO dao = null;
 		// getDAO
 		dao = EmployeeDAOFactory.getInstance();
+		// saving data
 		dao.saveData();
 		//close connections
 		HibernateUtil.closeSession();
