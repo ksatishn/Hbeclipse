@@ -12,5 +12,6 @@ public class AnnotaionTest {
 		dao.saveData();
 		//close connections
 		HibernateUtil.closeSession();
+		//End of Annotaion test
 	}
 }
