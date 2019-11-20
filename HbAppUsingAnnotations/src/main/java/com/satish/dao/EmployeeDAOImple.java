@@ -24,7 +24,7 @@ public class EmployeeDAOImple implements EmployeeDAO{
 		e2.setEid(12345);
 		e2.setFirstName("satish1");
 		e2.setLastName("k1");
-		e2.setEmail("0292satish");
+		e2.setEmail("0292satish@");
 		try{
 			System.out.println("session assign");
 			session = HibernateUtil.getSession();
