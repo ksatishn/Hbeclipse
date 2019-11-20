@@ -30,7 +30,7 @@ public class EmployeeDAOImple implements EmployeeDAO{
 			session = HibernateUtil.getSession();
 			System.out.println("tx assign");
 			tx = session.beginTransaction();
-			System.out.println("save e1");
+			System.out.println("save e1 begin");
 			session.update(e1);
 			System.out.println("save e2");
 			session.update(e2);
