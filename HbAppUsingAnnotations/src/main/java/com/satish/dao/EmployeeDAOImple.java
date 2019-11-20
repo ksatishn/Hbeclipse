@@ -16,7 +16,11 @@ public class EmployeeDAOImple implements EmployeeDAO{
 		Transaction tx = null;
 		
 		Employee e1 = new Employee();
+
 		e1.setEid(12349);
+
+		e1.setEid(123456);
+
 		e1.setFirstName("satish naidu");
 		e1.setLastName("karanam");
 		e1.setEmail("0292satish@gmail.com");
@@ -30,7 +34,7 @@ public class EmployeeDAOImple implements EmployeeDAO{
 			session = HibernateUtil.getSession();
 			System.out.println("tx assign");
 			tx = session.beginTransaction();
-			System.out.println("save e1");
+			System.out.println("save e1 begin");
 			session.update(e1);
 			System.out.println("save e2");
 			session.update(e2);
